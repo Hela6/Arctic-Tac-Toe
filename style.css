@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Titan+One&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-image: url(images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Coiny', cursive;
+    /* font-family: 'Titan One', cursive; */
+}
+
+nav {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color:rgb(4, 86, 141);
+    font-size: 2.5em;
+    padding: 20px;
+    border: solid 3px rgb(4, 86, 141);
+    border-radius: 10px;
+    background: rgba(240, 238, 238, 0.774);
+}
+
+section {
+    width: 60%;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 160px 160px 160px;
+    grid-template-columns: 160px 160px 160px;
+    gap: 12px;
+    margin: 20px auto;
+}
+
+.case {
+    border-radius: 10px;
+    border: none;
+    background: rgba(192, 191, 191, 0.438);
+    box-shadow: 8px 8px 5px 2px;
+    color: rgb(172, 170, 170);
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.case:active {
+    transform: translateX(3%) translateY(3%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 4px 4px 1px 1px;
+}
+
+h2, h3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+h2 a {
+    text-decoration: none;
+    background: rgba(240, 238, 238, 0.774);
+    color: rgb(4, 86, 141);
+    border: solid 3px rgb(4, 86, 141);
+    border-radius: 10px;
+    padding: 15px 15px 15px 40px;
+    margin-top: 20px;
+}
+
+h2 a:active {
+    transform: translateX(1%) translateY(1%);
+    transition: transform 0.3s ease-in-out;
+}
+
+h2 a span {
+    color: transparent;
+}
+
+h2 a:hover > span {
+    color: blue;
+}
+
+h3 {
+    color: silver;
+    font-size: 2em;
+    margin: 0 auto;
+    text-shadow: 3px 3px 0px rgb(4, 86, 141);
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+}
+
+.beluga {
+    margin-left: 200px; 
+    width: 400px;
+    height: 400px;
+    position: relative;
+    bottom: -150px;
+    transform: rotate(300deg) translateX(100%) translateY(250%);
+    transition: transform 8s ease-in-out;
+}
+
+.water {
+    margin-left: 800px;
+    width: 100px;
+    height: 100px;
+    rotate: 180deg;
+    position: relative;
+    bottom: -400px;
+    transform: rotate(40deg) translateX(60%) translateY(1000%);
+    transition: transform 10s ease-in-out;
+}
+
+/* responsive for tablets________________________________________________________________________________*/
+ @media screen and (max-width: 868px) {
+    h1 {
+        font-size: 2em;
+        padding: 10px;        
+    }
+
+    section {
+        grid-template-rows: 130px 130px 130px;
+        grid-template-columns: 130px 130px 130px;
+        margin: 50px auto;
+        gap: 10px;
+    }
+
+    .case {
+        border-radius: 5px;
+        box-shadow: 4px 4px 2px 0px;
+        font-size: 3.5em;
+    }
+
+    .case:active {
+        transform: translateX(2%) translateY(2%);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 1px 1px 0px 0px;
+    }
+
+    h2 a {
+        font-size: 1em;
+        padding: 10px 15px 10px 40px;
+        margin-top: 30px;
+    }
+
+    .beluga {
+        margin-left: -400px; 
+        width: 400px;
+        height: 400px;
+        position: relative;
+        bottom: -400px;
+        transform: rotate(300deg) translateX(50%) translateY(200%);
+        transition: transform 8s ease-in-out;
+    }
+    
+    .water {
+        margin-left: 500px;
+        width: 100px;
+        height: 100px;
+        rotate: 180deg;
+        position: relative;
+        bottom: -250px;
+        transform: rotate(40deg) translateX(20%) translateY(600%);
+        transition: transform 10s ease-in-out;
+    }
+
+    }
+
+/* responsive for smartphones________________________________________________________________________________*/
+  @media screen and (max-width: 568px) {
+    nav {
+        height: 100px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+        padding: 10px;
+        border: solid 3px rgb(202, 200, 200);
+        border-radius: 5px;
+        box-shadow: 4px 4px 1px 0px;
+    }
+
+    section {
+        width: 80%;
+        justify-content: center;
+        grid-template-rows: 130px 130px 130px;
+        grid-template-columns: 130px 130px 130px;
+        margin: 50px auto;
+        gap: 10px;
+    }
+
+    .case {
+        font-size: 3em;
+    }
+
+    .case:active {
+        transform: translateX(0%) translateY(0%);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 4px 4px 2px 1px;
+    }
+
+    h2 a {
+        font-size: 0.8em;
+        padding: 10px 15px 10px 40px;
+        margin-top: 30px;
+    }
+
+    .beluga {
+        display: none;
+    }
+    
+    .water {
+        display: none;
+    }
+
+    }
+    
