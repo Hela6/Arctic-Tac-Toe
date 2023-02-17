@@ -35,9 +35,9 @@ section {
     width: 60%;
     display: grid;
     justify-content: center;
-    grid-template-rows: 160px 160px 160px;
-    grid-template-columns: 160px 160px 160px;
-    gap: 12px;
+    grid-template-rows: 140px 140px 140px;
+    grid-template-columns: 140px 140px 140px;
+    gap: 10px;
     margin: 20px auto;
 }
 
@@ -47,7 +47,7 @@ section {
     background: rgba(192, 191, 191, 0.438);
     box-shadow: 8px 8px 5px 2px;
     color: rgb(172, 170, 170);
-    font-size: 4em;
+    font-size: 3.5em;
     display: flex;
     justify-content: center;
     align-items: center;
