@@ -11,6 +11,7 @@ html, body {
     background-attachment: fixed;
     font-family: 'Coiny', cursive;
     /* font-family: 'Titan One', cursive; */
+    overflow: hidden;
 }
 
 nav {
@@ -94,8 +95,14 @@ h3 {
     text-shadow: 3px 3px 0px rgb(4, 86, 141);
 }
 
+.h3_anim {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+
 footer {
     width: 100%;
+    height: 200px;
     position: absolute;
 }
 
@@ -105,8 +112,15 @@ footer {
     height: 400px;
     position: relative;
     bottom: -150px;
+    /* transform: rotate(300deg) translateX(100%) translateY(250%);
+    transition: transform 8s ease-in-out; */
+}
+
+.beluga_anim {
     transform: rotate(300deg) translateX(100%) translateY(250%);
-    transition: transform 8s ease-in-out;
+    /* transition: transform 8s ease-in-out; */
+    /* transition: transform 4s cubic-bezier(0,1.04,.36,.71); */
+    transition: transform 3s cubic-bezier(.16,.98,1,.66);
 }
 
 .water {
@@ -116,9 +130,15 @@ footer {
     rotate: 180deg;
     position: relative;
     bottom: -400px;
-    transform: rotate(40deg) translateX(60%) translateY(1000%);
-    transition: transform 10s ease-in-out;
+    /* transform: rotate(40deg) translateX(60%) translateY(1000%);
+    transition: transform 10s ease-in-out; */
 }
+
+.water_anim {
+    transform: rotate(40deg) translateX(60%) translateY(1000%);
+    transition: transform 5s ease-in-out;
+}
+
 
 /* responsive for tablets________________________________________________________________________________*/
  @media screen and (max-width: 868px) {
